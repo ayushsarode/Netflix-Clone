@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/header-image.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px 8%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  width: 180px;
+  cursor: pointer;
+}
+
+.SignBtn {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.language-btn {
+  border: 1.5px solid #fff;
+  outline: none;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.language-btn img {
+  width: 12px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 80px;
+}
+
+.header-content h1 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+}
+
+.header-content h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.email-singup {
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+  /* opacity: 0.5; */
+}
+
+.email-singup input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* ------------------------features section----------------------------- */
+
+.email-singup button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+.features {
+  padding: 50px 12%;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.features h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/*--------------FAQ--------------*/
+
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 30px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.faq .email-singup {
+  max-width: 600px;
+  margin: 20px auto 60px;
+  word-wrap: break-word;
+}
+
+.faq small {
+  font-size: 14px;
+}
+
+/* ----------footer----------- */
+
+.footer {
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.footer .language-btn {
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 3px;
+  position: relative;
+  margin-left: -1.5px;
+}
+
+.copyright-text {
+  font-style: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.credit {
+  text-align: center;
+}
+
+.credit a {
+  text-decoration: none;
+  color: white;
+}
+
+.credit .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1px 0;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: -100px;
+  opacity: 0.5;
+  font-size: 15px;
+}
+
+.credit:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ---------media-quesies-----------  */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+    position: relative;
+    right: 10px;
+  }
+
+  nav button {
+    padding: 5px 10px;
+  }
+  nav .language-btn {
+    padding: 4px 7px;
+    left: 10px;
+    position: relative;
+  }
+
+  nav .SignBtn {
+    padding: 4px 8px;
+
+    font-weight: 550;
+  }
+
+  .header-content {
+    position: unset;
+    transform: none;
+    padding-top: 70px;
+  }
+
+  .header-content {
+    font-size: 30px;
+  }
+
+  .email-singup button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  .header-content h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .text col,
+  .img-col {
+    flex-basis: 100%;
+  }
+
+  .features h2 {
+    font-size: 30px;
+  }
+
+  .features p {
+    font-size: 15px;
+  }
+
+  .row:nth-child(1),
+  .row:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .row:nth-child(2),
+  .row:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
+  .features .row {
+    padding: 10px 0;
+  }
+
+  .faq h2 {
+    font-size: 20px;
+  }
+
+  .accordion .content {
+    font-size: 14px;
+  }
+
+  .accordion li label {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  label::after {
+    font-size: 22px;
+  }
+}
